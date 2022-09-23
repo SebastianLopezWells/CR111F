@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %} Delete note {% endblock title %}
+
+
+{% block content %}
+
+    <!-- <h1>Delete Note</h1>
+    <h4>Your notes:</h4>
+    <ul>
+      {% for nt in notes %}
+      <li>#{{ nt["id"] }} {{ nt["title"] }} - {{ nt["subtitle"] }}</li>
+  
+      {% endfor %}
+  </ul> -->
+
+  <h1>Are you sure that you want to delete the note?</h1>
+    <form action="{{ url_for('delete_notes', pk=note['id']) }}" method="post">
+    <input type="submit" class="btn btn-primary" value="Delete"/>
+  </form>
+
+
+{% endblock content %}

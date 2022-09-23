@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %} New Data Type {% endblock title %}
+
+
+{% block content %}
+    <h1>Update Note</h1>
+
+
+    <form action="{{ url_for('update_notes', pk=note['id']) }}" method="post">
+        <div class="mb-3">
+            <label for="title" class="form-label">New title</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="{{ note['title'] }}">
+          </div>
+          <div class="mb-3">
+            <label for="subtitle" class="form-label">New subtitle</label>
+            <input type="text" class="form-control" id="subtitle" name="subtitle" placeholder="{{ note['subtitle'] }}">
+          </div>
+          <div class="mb-3">
+            <label for="body" class="form-label">New body</label>
+            <input type="text" class="form-control" id="body" name="body" placeholder="{{ note['body'] }}">
+          </div>
+          <input type="submit" class="btn btn-primary" value="Modify"/>
+    </form>
+
+{% endblock content %}

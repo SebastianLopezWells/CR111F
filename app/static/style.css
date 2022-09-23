@@ -1,0 +1,31 @@
+.container-bg {
+    background-color: #fbd99a;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.list-container {
+    padding: 12px;
+    background-color: rgb(71, 68, 68);
+    margin: 22px;
+    border-radius: 30px;
+}
+
+form {
+    margin: 25px;
+}
+
+.navbar {
+    background-color: blanchedalmond;
+}
+
+.table-div {
+    margin: 25px;
+    background-color: beige;
+    border: 2px solid;
+}
+
+h1 {
+    margin: 10px;
+}

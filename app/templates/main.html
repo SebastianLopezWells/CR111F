@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+<h1>Welcome to NotesForMe</h1>
+
+<div class="container-bg">
+    <h3>Web Description</h3>
+    <p>This web was made for the users to have notes displayed, add new notes, modify notes and delete them.</p>
+
+    <!-- <h3>Your Notes: </h3> -->
+</div>
+<div class="list-container">
+    <div class="container-bg">
+        <h1>Notes</h1>
+        <ul>
+            {% for nt in notes %}
+            <li>{{ nt["title"] }} - {{ nt["subtitle"] }}</li>
+
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}
